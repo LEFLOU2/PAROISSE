@@ -1,0 +1,128 @@
+:root{
+    --color-primary: blue;
+    --color-white: white;
+    --color-black: black;
+    --color-black-1:var(--color-black-1)
+}
+
+.{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.menu_bar{
+    background-color: rgb(14, 12, 12);
+    height: 80px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.logo{
+    color: wheat
+    font-size: 30px;
+}
+
+.logo span{
+    color: var(--color-primary)
+}
+
+.menu_bar ul{
+    list-style: none;
+    display: flex;
+
+}
+
+.menu_bar ul li{
+    padding: 0px 40px;
+    position: relative;
+}
+
+.menu_bar ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+
+
+.menu_bar ul li a:hover{
+    color: var(--color-primary);
+    
+}
+
+.dropdown_menu{
+    display: none;
+    
+}
+
+.menu_bar ul li:hover .dropdown_menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--color-black);
+
+}
+
+.dropdown_menu ul{
+    display: block;
+    margin: 10px;
+
+}
+
+.dropdown_menu ul li{
+    width: 150px;
+    padding: 10px;
+
+}
+
+.fas{
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+
+.hero{
+    height: calc(100vh - 80px);
+    background-image: url(croix_lumineuse.jpeg__770x433_q85_crop_subsampling-2_upscale.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.hero h1{
+    color: red;
+    margin-left: 1500px;
+}
+
+.hero h4{
+    color: white;
+    margin-left: 1500px;
+    padding: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+}
+
+.dropdown_menu1{
+    display: none;
+}
+
+.dropdown_menu ul li:hover .dropdown_menu1{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 150px;
+    background-color: var(--color-black);
+
+}
+
